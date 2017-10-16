@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder - Survey</title>
+	
+    <!-- Added a link to Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- Added link to jQuery library-->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<!-- Added link to the Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+	<style> body{background-color: silver;} </style>
+
+</head>
+<body>
+
+	<div class="container">
+		<br>
+		<form id="needs-validation" novalidate>
+		<div class = "jumbotron">
+			<h1>Survey Questions</h1>
+			<hr>
+			<h2>About You</h2>
+			
+			  <div class="row">
+			    <div class="col-md-12 mb-3">
+			      <label for="validationCustom01"><h4>Name (Required)</h4></label>
+			      <input type="text" class="form-control" id="name" required>
+			      	<div class="invalid-feedback">
+     					Please provide a valid name.
+      				</div>
+			    </div>
+			  </div>
+			  <div class="row">
+			    <div class="col-md-12 mb-3">
+			      <label for="validationCustom02"><h4>Link to Photo Image (Required)</h4></label>
+			      <input type="text" class="form-control" id="photo" required>
+			      	<div class="invalid-feedback">
+     					Please provide a valid photo link.
+      				</div>
+			    </div>
+			  </div>
+
+		</div>
+
+		<div class = "jumbotron">
+			<div class="row">
+				<div class="col-md-4 mb-3">
+				    <div class="form-group">
+				      <label for="exampleFormControlSelect1"><h4>Question 1</h4></label>
+				      <p><strong>I like big butts and I cannot lie</strong></p>
+				      <select class="form-control" id="ques1" required>
+				      	<option value=""></option>
+				        <option value="1">1 (strongly disagree)</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5 (strongly agree)</option>
+				      </select>
+				      <div class="invalid-feedback">
+     					Please provide a response.
+      				  </div>
+				    </div>
+				 </div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 mb-3">
+				    <div class="form-group">
+				      <label for="exampleFormControlSelect1"><h4>Question 2</h4></label>
+				      <p><strong>I like big butts and I cannot lie</strong></p>
+				      <select class="form-control" id="ques2" required>
+				      	<option value=""></option>
+				        <option value="1">1 (strongly disagree)</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5 (strongly agree)</option>
+				      </select>
+				      <div class="invalid-feedback">
+     					Please provide a response.
+      				  </div>
+				    </div>
+				 </div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 mb-3">
+				    <div class="form-group">
+				      <label for="exampleFormControlSelect1"><h4>Question 3</h4></label>
+				      <p><strong>I like big butts and I cannot lie</strong></p>
+				      <select class="form-control" id="ques3" required>
+				      	<option value=""></option>
+				        <option value="1">1 (strongly disagree)</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5 (strongly agree)</option>
+				      </select>
+				      <div class="invalid-feedback">
+     					Please provide a response.
+      				  </div>
+				    </div>
+				 </div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 mb-3">
+				    <div class="form-group">
+				      <label for="exampleFormControlSelect1"><h4>Question 4</h4></label>
+				      <p><strong>I like big butts and I cannot lie</strong></p>
+				      <select class="form-control" id="ques4" required>
+				      	<option value=""></option>
+				        <option value="1">1 (strongly disagree)</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5 (strongly agree)</option>
+				      </select>
+				      <div class="invalid-feedback">
+     					Please provide a response.
+      				  </div>
+				    </div>
+				 </div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 mb-3">
+				    <div class="form-group">
+				      <label for="exampleFormControlSelect1"><h4>Question 5</h4></label>
+				      <p><strong>I like big butts and I cannot lie</strong></p>
+				      <select class="form-control" id="ques5" required>
+				      	<option value=""></option>
+				        <option value="1">1 (strongly disagree)</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5 (strongly agree)</option>
+				      </select>
+				      <div class="invalid-feedback">
+     					Please provide a response.
+      				  </div>
+				    </div>
+				 </div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 mb-3">
+				    <div class="form-group">
+				      <label for="exampleFormControlSelect1"><h4>Question 6</h4></label>
+				      <p><strong>I like big butts and I cannot lie</strong></p>
+				      <select class="form-control" id="ques6" required>
+				      	<option value=""></option>
+				        <option value="1">1 (strongly disagree)</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5 (strongly agree)</option>
+				      </select>
+				      <div class="invalid-feedback">
+     					Please provide a response.
+      				  </div>
+				    </div>
+				 </div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 mb-3">
+				    <div class="form-group">
+				      <label for="exampleFormControlSelect1"><h4>Question 7</h4></label>
+				      <p><strong>I like big butts and I cannot lie</strong></p>
+				      <select class="form-control" id="ques7" required>
+				      	<option value=""></option>
+				        <option value="1">1 (strongly disagree)</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5 (strongly agree)</option>
+				      </select>
+				      <div class="invalid-feedback">
+     					Please provide a response.
+      				  </div>
+				    </div>
+				 </div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 mb-3">
+				    <div class="form-group">
+				      <label for="exampleFormControlSelect1"><h4>Question 8</h4></label>
+				      <p><strong>I like big butts and I cannot lie</strong></p>
+				      <select class="form-control" id="ques8" required>
+				      	<option value=""></option>
+				        <option value="1">1 (strongly disagree)</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5 (strongly agree)</option>
+				      </select>
+				      <div class="invalid-feedback">
+     					Please provide a response.
+      				  </div>
+				    </div>
+				 </div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 mb-3">
+				    <div class="form-group">
+				      <label for="exampleFormControlSelect1"><h4>Question 9</h4></label>
+				      <p><strong>I like big butts and I cannot lie</strong></p>
+				      <select class="form-control" id="ques9" required>
+				      	<option value=""></option>
+				        <option value="1">1 (strongly disagree)</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5 (strongly agree)</option>
+				      </select>
+				      <div class="invalid-feedback">
+     					Please provide a response.
+      				  </div>
+				    </div>
+				 </div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 mb-3">
+				    <div class="form-group">
+				      <label for="exampleFormControlSelect1"><h4>Question 10</h4></label>
+				      <p><strong>I like big butts and I cannot lie</strong></p>
+				      <select class="form-control" id="ques10" required>
+				      	<option value=""></option>
+				        <option value="1">1 (strongly disagree)</option>
+				        <option value="2">2</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5 (strongly agree)</option>
+				      </select>
+				      <div class="invalid-feedback">
+     					Please provide a response.
+      				  </div>
+				    </div>
+				 </div>
+			</div>
+
+			<!-- Button trigger modal -->
+			<button type="submit" class="btn btn-info" id="submit">
+			  Submit Survey
+			</button>
+			<p></p>
+			<p><a href="/api/friends">API Friends List</a></p>
+			</form>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+	        <h5 class="modal-title" id="modalLabel">Your next best friend!</h5>
+	      </div>
+	      <div class="modal-body">
+		      <h4 id="modalTitle"></h4>
+		      <img id="modalBody" src="" alt="pic">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+<script type="text/javascript">
+
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+
+      var form = document.getElementById("needs-validation");
+
+      if (form.checkValidity() == false) {
+        event.stopPropagation();
+        form.classList.add("was-validated");
+        alert("You must provide valid inputs to proceed.")
+        return;
+      }
+      
+      var newFriend = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: [$("#ques1").val(), $("#ques2").val(), $("#ques3").val(), $("#ques4").val(), $("#ques5").val(), $("#ques6").val(), $("#ques7").val(), $("#ques8").val(), $("#ques9").val(), $("#ques10").val() ]
+      };
+
+      $.post("/api/friends", newFriend)
+      .done(function(data){
+       
+        $("#modalTitle").text(data.name);
+        $("#modalBody").attr("src", data.photo);
+
+        $("#friendModal").modal("toggle");
+
+      });
+    });
+
+</script>
+
+</body>
+</html>
